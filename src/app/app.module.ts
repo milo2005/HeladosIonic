@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { HeladosPage } from '../pages/helados/helados';
 import { BebidasPage } from '../pages/bebidas/bebidas';
@@ -17,7 +18,8 @@ import { HeladosDataProvider } from '../providers/helados-data/helados-data';
     HomePage,
     HeladosPage,
     BebidasPage,
-    AddHeladoPage
+    AddHeladoPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -26,13 +28,17 @@ import { HeladosDataProvider } from '../providers/helados-data/helados-data';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    HeladosPage,
+    AddHeladoPage,
+    BebidasPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     HeladosDataProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
