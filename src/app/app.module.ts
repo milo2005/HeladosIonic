@@ -6,12 +6,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { HeladosPage } from '../pages/helados/helados';
+import { BebidasPage } from '../pages/bebidas/bebidas';
+import { AddHeladoPage } from '../pages/add-helado/add-helado';
 import { HeladosDataProvider } from '../providers/helados-data/helados-data';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    HeladosPage,
+    BebidasPage,
+    AddHeladoPage
   ],
   imports: [
     BrowserModule,
