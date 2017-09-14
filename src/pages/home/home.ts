@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { HeladosPage } from '../helados/helados';
 import { BebidasPage } from '../bebidas/bebidas';
 import { LoginPage } from '../login/login';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-home',
@@ -20,18 +21,19 @@ export class HomePage {
     { label: 'Bar', icon: 'md-wine' }
   ];
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public storage:Storage) { }
 
   setContent(index: number) {
-    if(index == 0){
+    if (index == 0) {
       this.root = HomePage;
-    }else{
+    } else {
       this.root = BebidasPage;
     }
   }
 
   logout() {
-    this.navCtrl.setRoot(LoginPage);
+    this.storage.set("logged", false);
+    this.navCtrl.setRoot(LoginPage);    
   }
 
 }

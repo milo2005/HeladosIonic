@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-login',
@@ -8,7 +9,9 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    public storage: Storage) {
   }
 
   ionViewDidLoad() {
@@ -16,6 +19,7 @@ export class LoginPage {
   }
 
   login() {
+    this.storage.set("logged", true);
     this.navCtrl.setRoot(HomePage);
   }
 
