@@ -25,7 +25,7 @@ export class HomePage {
 
   setContent(index: number) {
     if (index == 0) {
-      this.root = HomePage;
+      this.root = HeladosPage;
     } else {
       this.root = BebidasPage;
     }
