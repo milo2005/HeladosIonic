@@ -27,7 +27,7 @@ export class HeladosPage {
   }
 
   goToAdd() {
-    this.navCtrl.push(AddHeladoPage);
+    this.navCtrl.parent.push(AddHeladoPage);
   }
 
 }
