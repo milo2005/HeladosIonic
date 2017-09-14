@@ -21,7 +21,6 @@ export class HeladosDataProvider {
       { nombre: 'Chocolate Pasion', porcion: 1, precio: 5000, imagen: 'http://static.vix.com/es/sites/default/files/styles/large/public/imj/elgranchef/H/Helado%20de%20chocolate%20sin%20leche.jpg' },
       { nombre: 'Frutos Rojos', porcion: 1, precio: 5000, imagen: 'http://2.bp.blogspot.com/-qZ2Oi3Z3r9M/VNqo_iCRm6I/AAAAAAAAF_A/dcwSL1RgZJI/s1600/P2070250.JPG' },
       { nombre: 'Helado de Fresas', porcion: 1, precio: 5000, imagen: 'https://s-media-cache-ak0.pinimg.com/originals/eb/25/57/eb2557a80bdcf64f1f0d5cd3aa9e22da.jpg' },
-      { nombre: 'Paletas', porcion: 1, precio: 3000, imagen: 'http://www.lavozdemichoacan.com.mx/wp-content/uploads/2015/08/Paletas-de-Hielo.jpg' },
       { nombre: 'Helado de Caramelo', porcion: 1, precio: 5000, imagen: 'http://www.que.es/archivos/201108/helados-dolcelatte.jpg' },
       { nombre: 'Cono de Nieve', porcion: 1, precio: 3000, imagen: 'http://cdn.kiwilimon.com/clasificacion/44/44.jpg' },
       { nombre: 'Helado de Naranja', porcion: 1, precio: 5000, imagen: 'http://recetas.cuidadoinfantil.net/files/2012/06/helado-de-naranja.jpg' },
